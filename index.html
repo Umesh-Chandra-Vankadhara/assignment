@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+      html,
+      body {
+        margin: 0px;
+        background-color: #e0e0e0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        background-color: #ffffff;
+        z-index:1;
+      }
+      aside {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        background-color: #ffffff;
+      }
+      .main {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        height: 100vh;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #input_url {
+        outline: none;
+        border-radius: 0.5rem;
+        border: none;
+        width: 200%;
+        margin-bottom: 12%;
+        line-height: 30px;
+      }
+      #upload {
+        outline: none;
+        border-radius: 0.5rem;
+        border: none;
+        height: 150px;
+        text-align: center;
+        line-height: 30px;
+      }
+      aside div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5%;
+      }
+      #video {
+        position: absolute;
+        top: 110px;
+        left: 110px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <header>
+           <img src="brand.jpeg" alt="logo" height="66px" width="82px">
+        </header>
+      </div>
+      <div>
+        <main>
+          <div id="video">
+            <i class="fa fa-play"><strong>Videos</strong></i>
+          </div>
+          <div class="main">
+            <div>
+              <input type="text" id="input_url" placeholder="Insert URL here" />
+            </div>
+            <p style="text-align: center"><strong>or</strong></p>
+            <div>
+              <input type="text" id="upload" placeholder="upload" />
+            </div>
+          </div>
+        </main>
+      </div>
+      <div>
+        <aside>
+          <div>
+            <div style="margin-top: 90%">
+              <p>
+                <i class="fa fa-user" style="font-size: 24px"></i><br />
+                <span>students</span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <i class="fa fa-book" style="font-size: 24px"></i><br />
+                <span>Lesson Plan</span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <i class="fa fa-gear" style="font-size: 24px"></i><br />
+                <span>settings</span>
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
